@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-black.otf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-blackitalic.otf");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-extrabold.otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-extrabolditalic.otf");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-bolditalic.otf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-semibold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-semibolditalic.otf");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-mediumitalic.otf");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-italic.otf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-lightitalic.otf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-extralight.otf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-extralightitalic.otf");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-thin.otf");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mazzard Soft M";
+  src: url("/fonts/Mazzard-M/mazzardsoftm-thinitalic.otf");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FtMade";
+  src: url("/fonts/FT-Made/FTMade-Regular.otf") format("otf"),
+    url("/fonts/FT-Made/FTMade-Regular.woff2") format("woff2"),
+    url("/fonts/FT-Made/FTMade-Regular.woff") format("woff"),
+    url("/fonts/FT-Made/FTMade-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
