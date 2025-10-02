@@ -43,7 +43,7 @@ const CommandInput = React.forwardRef<
 >(({ className, icon: Icon = Search, ...props }, ref) => (
   <div
     className={cn(
-      "group relative flex h-14 w-full  sm:min-w-[344px] items-center gap-4 rounded-lg border border-gray-200 bg-white p-4 focus-within:border-cyan-300 focus:border-cyan-300 focus:ring-0 focus:outline-none",
+      "group relative flex h-14 w-full  sm:min-w-[344px] items-center gap-4 rounded-lg border border-gray-200 bg-white p-4  focus:ring-0 focus:outline-none",
       className
     )}
     cmdk-input-wrapper=""

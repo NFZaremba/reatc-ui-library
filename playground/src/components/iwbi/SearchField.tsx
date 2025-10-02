@@ -99,17 +99,20 @@ export const SearchField = ({
           onFocus={() => setOpen(true)}
           placeholder={placeholder}
           disabled={disabled}
-          className={cn(isOpen && "rounded-b-none")}
+          className={cn(
+            "focus-within:border-cyan-300 focus:border-cyan-300",
+            isOpen && "rounded-b-none"
+          )}
         />
       </div>
       <div className="relative">
         <div
           className={cn(
-            "animate-in fade-in-0 zoom-in-95 absolute top-0 z-10 w-full rounded-xl bg-white outline-none",
+            "animate-in fade-in-0 absolute top-0 z-10 w-full rounded-xl bg-white outline-none",
             isOpen ? "block" : "hidden"
           )}
         >
-          <CommandList>
+          <CommandList className="border-b border-x border-cyan-300">
             {isLoading ? (
               <CommandPrimitive.Loading>
                 <div className="p-1">
@@ -138,6 +141,7 @@ export const SearchField = ({
                 })}
               </CommandGroup>
             ) : null}
+
             {!isLoading ? (
               <CommandPrimitive.Empty className="select-none rounded-sm px-2 py-3 text-center text-sm">
                 {emptyMessage}

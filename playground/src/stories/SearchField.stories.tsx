@@ -35,7 +35,7 @@ const FRAMEWORKS = [
   },
 ];
 
-import { SearchField } from "@/components/iwbi/search";
+import { SearchField } from "@/components/iwbi/SearchField";
 
 const meta = {
   title: "IWBI/SearchField",
