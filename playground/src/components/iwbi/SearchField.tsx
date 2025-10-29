@@ -1,8 +1,10 @@
 import {
+  Command,
   CommandGroup,
   CommandItem,
   CommandList,
   CommandInput,
+  CommandEmpty,
 } from "@/components/ui/command";
 import { Command as CommandPrimitive } from "cmdk";
 import { useState, useRef, useCallback, type KeyboardEvent } from "react";
@@ -89,7 +91,15 @@ export const SearchField = ({
   );
 
   return (
-    <CommandPrimitive onKeyDown={handleKeyDown}>
+    <CommandPrimitive
+      filter={(value, search, keywords) => {
+        const extendValue = value + " " + (keywords?.join(" ") || "");
+        console.log(extendValue, search);
+        if (extendValue.includes(search)) return 1;
+        return 0;
+      }}
+      onKeyDown={handleKeyDown}
+    >
       <div>
         <CommandInput
           ref={inputRef}
@@ -113,13 +123,13 @@ export const SearchField = ({
           )}
         >
           <CommandList className="border-b border-x border-cyan-300">
-            {isLoading ? (
-              <CommandPrimitive.Loading>
+            {/* {isLoading ? (
+              <Skeleton>
                 <div className="p-1">
-                  {/* <Skeleton className="h-8 w-full" /> */}
                 </div>
-              </CommandPrimitive.Loading>
-            ) : null}
+              </Skeleton>
+            ) : null} */}
+
             {options?.length > 0 && !isLoading ? (
               <CommandGroup>
                 {options.map((option) => {
@@ -143,9 +153,9 @@ export const SearchField = ({
             ) : null}
 
             {!isLoading ? (
-              <CommandPrimitive.Empty className="select-none rounded-sm px-2 py-3 text-center text-sm">
+              <CommandEmpty className="select-none rounded-sm px-2 py-3 text-center text-sm text-gray-200">
                 {emptyMessage}
-              </CommandPrimitive.Empty>
+              </CommandEmpty>
             ) : null}
           </CommandList>
         </div>
