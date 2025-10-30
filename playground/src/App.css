@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-/* @import "./fonts.css"; */
+@import "./assets/css/fonts.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -17,9 +17,9 @@
 }
 
 @theme {
-  /* --font-display: "Mazzard Soft M", sans-serif;
+  --font-display: "Mazzard Soft M", sans-serif;
   --font-ftmade: "FtMade", sans-serif;
-  --font-mazzard: "Mazzard Soft M", sans-serif; */
+  --font-mazzard: "Mazzard Soft M", sans-serif;
 
   --color-white: #fff;
   --color-black: #000;
